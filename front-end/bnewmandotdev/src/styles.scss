@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Slabo+13px&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: aqua;
+	height: 10em;
+	#heading {
+		margin: auto;
+		width: 95%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 10em;
+
+		img {
+			width: 25%;
+			height: auto;
+			object-fit: contain;
+			max-width: 130px;
+			min-width: 60px;
+		}
+
+		h1 {
+			font-family: "Share Tech Mono", monospace;
+			font-size: 36px;
+			color: black;
+		}
+
+		button {
+			padding-top: 4rem;
+			padding-bottom: 2rem;
+			margin-bottom: 7rem;
+			align-self: start;
+			width: 8%;
+			vertical-align: text-bottom;
+			font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+			font-size: 24px;
+			background: none;
+			border: none;
+		}
+
+		button:hover {
+			background-color: white;
+			transition: 0.4s;
+		}
+	}
+}
+
+#home-intro {
+	background-color: steelblue;
+	min-height: 70vh;
+	main {
+		width: 30%;
+		padding-top: 12vh;
+		margin-left: 12%;
+
+		h2 {
+			font-size: 36px;
+			font-family: "Slabo 13px", serif;
+			margin-bottom: 5px;
+		}
+
+		p {
+			font-family: "Slabo 13px", serif;
+			font-size: 18px;
+		}
+		button {
+			font-family: "Slabo 13px", serif;
+			font-size: 18px;
+			width: 30%;
+			height: 60px;
+			margin-top: 20px;
+			margin-right: 50px;
+			border: none;
+			border-radius: 50px;
+		}
+
+		button:hover {
+			background-color: red;
+			transition: 0.4s;
+		}
+	}
+}
