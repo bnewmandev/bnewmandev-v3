@@ -17,6 +17,13 @@
 .ORANGEBGCOL {
 	background-color: #ef7c1a !important;
 }
+.MAINHEADING {
+	padding: 8vh 0 8vh 0;
+	color: white;
+	font-family: "Slabo 13px", serif;
+	text-align: center;
+	font-size: 60px;
+}
 
 // Global Header Styling
 header {
@@ -42,6 +49,7 @@ header {
 		h1 {
 			font-family: "Share Tech Mono", monospace;
 			font-size: 36px;
+			color: white;
 		}
 
 		button {
@@ -154,6 +162,29 @@ header {
 				color: black;
 				padding: 10px;
 			}
+		}
+	}
+}
+
+#aboutme {
+	background-color: #444444;
+	main {
+		width: 80%;
+		margin: auto auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 60vh;
+		article {
+			width: 40%;
+			text-align: center;
+			p {
+				height: 60vh;
+				font-size: 30px;
+				overflow-y: auto;
+				font-family: "Slabo 13px", serif;
+			}
+			margin-bottom: 10vh;
 		}
 	}
 }
