@@ -1,11 +1,18 @@
+// Importing Fonts
 @import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Slabo+13px&display=swap");
 
+// Global page styling and resets
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
+	color: white;
+	text-decoration: none;
 }
+
+// Global Header Styling
 header {
-	background-color: aqua;
+	background-color: #2f3038;
 	height: 10em;
 	#heading {
 		margin: auto;
@@ -27,7 +34,6 @@ header {
 		h1 {
 			font-family: "Share Tech Mono", monospace;
 			font-size: 36px;
-			color: black;
 		}
 
 		button {
@@ -50,38 +56,96 @@ header {
 	}
 }
 
-#home-intro {
-	background-color: steelblue;
-	min-height: 70vh;
-	main {
-		width: 30%;
-		padding-top: 12vh;
-		margin-left: 12%;
+//Global Footer Styling
+.footerWrapper {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	position: sticky;
+	background-color: rgba(47, 48, 56, 0.6);
+	text-align: center;
+	color: white;
+	margin-top: 5vh;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
 
-		h2 {
-			font-size: 36px;
-			font-family: "Slabo 13px", serif;
-			margin-bottom: 5px;
-		}
-
-		p {
-			font-family: "Slabo 13px", serif;
-			font-size: 18px;
-		}
-		button {
-			font-family: "Slabo 13px", serif;
-			font-size: 18px;
+// Home page specific styling
+#home {
+	background-color: #444444;
+	#home-intro {
+		background-color: #444444;
+		min-height: 45vh;
+		main {
 			width: 30%;
-			height: 60px;
-			margin-top: 20px;
-			margin-right: 50px;
-			border: none;
-			border-radius: 50px;
-		}
+			padding-top: 12vh;
+			margin-left: 12%;
 
-		button:hover {
-			background-color: red;
-			transition: 0.4s;
+			h2 {
+				font-size: 36px;
+				font-family: "Slabo 13px", serif;
+				margin-bottom: 5px;
+			}
+
+			p {
+				font-family: "Slabo 13px", serif;
+				font-size: 18px;
+			}
+			button {
+				font-family: "Slabo 13px", serif;
+				font-size: 18px;
+				width: 30%;
+				height: 60px;
+				margin-top: 20px;
+				margin-right: 50px;
+				border: none;
+				border-radius: 50px;
+				background-color: #ef7c1a;
+			}
+
+			button:hover {
+				background-color: rgba(188, 188, 188, 0.16);
+				transition: 0.4s;
+			}
+		}
+	}
+
+	#HomeMySkills {
+		background-color: #444444;
+		h1 {
+			font-family: "Slabo 13px", serif;
+			font-size: 48px;
+			text-align: center;
+			margin-bottom: 2vh;
+		}
+		.HomeMySkillsWrapper {
+			margin: auto auto;
+			display: flex;
+			justify-content: space-evenly;
+			width: 90%;
+			a {
+				background-color: #c7c7c7;
+				margin: 20px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				width: 400px;
+				border: 3px solid black;
+				height: 300px;
+				margin-bottom: 8vh;
+				text-align: center;
+				overflow-y: auto;
+				overflow-x: hidden;
+				box-shadow: 10px 15px 10px #2b2a2a;
+			}
+			a:hover {
+				border: 3px solid #ef7c1a;
+				box-shadow: 10px 15px 10px #ef7d1a63;
+			}
+			h2,
+			p {
+				color: black;
+				padding: 10px;
+			}
 		}
 	}
 }

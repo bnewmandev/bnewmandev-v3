@@ -1,6 +1,8 @@
 const express = require("express");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
+const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
 
@@ -9,6 +11,11 @@ const plansRoutes = require("./api/routes/plans");
 const projectsRoutes = require("./api/routes/projects");
 const skillsRoutes = require("./api/routes/skills");
 const toleanRoutes = require("./api/routes/tolearn");
+
+mongoose.connect(process.env.CONNECTION_STRING, {
+	useNewUrlParser: true,
+	useUnifiedTopology: true,
+});
 
 app.use(morgan("dev"));
 app.use(bodyParser.urlencoded({ extended: false }));

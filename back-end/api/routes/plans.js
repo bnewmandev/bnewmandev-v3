@@ -1,5 +1,7 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const router = express.Router();
+const Plans = require("../models/plans");
 
 router.get("/", (req, res, next) => {
 	res.status(200).json({
@@ -8,6 +10,22 @@ router.get("/", (req, res, next) => {
 });
 
 router.post("/", (req, res, next) => {
+	const plans = new Plans({
+		_id: new mongoose.Types.ObjectId(),
+		title: req.body.title,
+		image: req.body.image,
+		content: req.body.content,
+		dateCreated: Date.now(),
+		dateUpdated: Date.now(),
+	});
+	plans
+		.save()
+		.then((result) => {
+			console.log(result);
+		})
+		.catch((err) => {
+			console.log(err);
+		});
 	res.status(201).json({
 		message: "Handling POST requests to /plans",
 	});
