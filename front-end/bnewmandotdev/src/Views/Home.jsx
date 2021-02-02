@@ -4,10 +4,10 @@ import Header from "../Components/Header";
 import HomeIntro from "../Components/HomeIntroduction";
 import HomeMySkills from "../Components/HomeMySkills";
 
-const Home = () => {
+const Home = (active) => {
 	return (
 		<div id="home">
-			<Header />
+			<Header active={active} />
 			<HomeIntro />
 			<HomeMySkills />
 			<Footer />
