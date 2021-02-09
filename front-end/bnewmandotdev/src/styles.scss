@@ -52,7 +52,8 @@ header {
 			color: white;
 		}
 
-		button {
+		a {
+			text-align: center;
 			padding-top: 4rem;
 			padding-bottom: 2rem;
 			margin-bottom: 7rem;
@@ -65,7 +66,7 @@ header {
 			border: none;
 		}
 
-		button:hover {
+		a:hover {
 			background-color: #ef7c1a;
 			transition: 0.4s;
 		}
@@ -136,6 +137,7 @@ header {
 		.HomeMySkillsWrapper {
 			margin: auto auto;
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-evenly;
 			width: 90%;
 			a {
@@ -157,10 +159,17 @@ header {
 				border: 3px solid #ef7c1a;
 				box-shadow: 10px 15px 10px #ef7d1a63;
 			}
+			img {
+				margin-bottom: 10px;
+				width: auto;
+				height: 130px;
+			}
 			h2,
 			p {
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 				color: black;
 				padding: 10px;
+				margin-bottom: 10px;
 			}
 		}
 	}
@@ -175,6 +184,9 @@ header {
 		justify-content: space-between;
 		align-items: center;
 		height: 60vh;
+		img {
+			height: 500px;
+		}
 		article {
 			width: 40%;
 			text-align: center;
@@ -185,6 +197,26 @@ header {
 				font-family: "Slabo 13px", serif;
 			}
 			margin-bottom: 10vh;
+		}
+	}
+}
+
+.primaryPage {
+	main {
+		min-height: 80vh;
+	}
+	background-color: #444444;
+	article {
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		text-align: center;
+		width: 75%;
+		margin: auto;
+		margin-bottom: 50px;
+		padding: 30px;
+		background-color: #2f3038;
+		border-radius: 30px;
+		h2 {
+			margin-bottom: 20px;
 		}
 	}
 }

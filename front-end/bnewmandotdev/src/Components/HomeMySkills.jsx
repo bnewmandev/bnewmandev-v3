@@ -1,38 +1,8 @@
 import HomeSkill from "./HomeSkill";
-
+import data from "../data.json";
 const HomeMySkills = () => {
-	const skills = [
-		{
-			title: "test1",
-			image: "https://via.placeholder.com/135x135.png",
-			body: "test1",
-			link: "http://www.google.com",
-			id: "123",
-		},
-		{
-			title: "test1",
-			image: "https://via.placeholder.com/135x135.png",
-			body: "test1",
-			link: "http://www.google.com",
-			id: "12",
-		},
-	];
-	const learning = [
-		{
-			title: "test1",
-			image: "https://via.placeholder.com/135x135.png",
-			body: "test1",
-			link: "http://www.google.com",
-			id: "123",
-		},
-		{
-			title: "test1",
-			image: "https://via.placeholder.com/135x135.png",
-			body: "test1",
-			link: "http://www.google.com",
-			id: "12",
-		},
-	];
+	const skills = data.skills;
+	const learning = data.learning;
 	return (
 		<div id="HomeMySkills">
 			<h1>My Skills</h1>

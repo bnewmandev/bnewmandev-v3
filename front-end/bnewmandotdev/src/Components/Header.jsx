@@ -1,23 +1,56 @@
 const Header = (active) => {
 	const isActive = active.active.active;
+
 	return (
 		<header>
 			<div id="heading">
-				<img src="https://bnewman.dev/assets/logo.png" alt="BNewman.dev" />
+				<img
+					src="https://bnewmandev.b-cdn.net/logos/logo.png"
+					alt="BNewman.dev"
+				/>
 				<h1>BNewman.Dev</h1>
-				<button className={`${isActive.home ? "ORANGEBGCOL" : ""}`} id="homeL">
+				<a
+					href="/home"
+					className={`${isActive.home ? "ORANGEBGCOL" : ""}`}
+					id="homeL"
+				>
 					Home
-				</button>
-				<button
+				</a>
+				<a
+					href="/aboutme"
 					className={`${isActive.aboutme ? "ORANGEBGCOL" : ""}`}
 					id="aboutMeL"
 				>
 					About Me
-				</button>
-				<button id="myPlansL">My Plans</button>
-				<button id="myProjectsL">My Projects</button>
-				<button id="linksL">Links</button>
-				<button id="contactMeL">Contact Me</button>
+				</a>
+				<a
+					href="/myplans"
+					id="myPlansL"
+					className={`${isActive.myplans ? "ORANGEBGCOL" : ""}`}
+				>
+					My Plans
+				</a>
+				<a
+					href="/myprojects"
+					id="myProjectsL"
+					className={`${isActive.myprojects ? "ORANGEBGCOL" : ""}`}
+				>
+					My Projects
+				</a>
+				<a
+					href="/links"
+					id="linksL"
+					className={`${isActive.links ? "ORANGEBGCOL" : ""}`}
+				>
+					Links
+				</a>
+				<a
+					href="/contactme"
+					id="contactMeL"
+					className={`${isActive.contactme ? "ORANGEBGCOL" : ""}`}
+				>
+					Contact Me
+				</a>
 			</div>
 		</header>
 	);

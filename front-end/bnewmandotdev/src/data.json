@@ -1,0 +1,105 @@
+{
+	"skills": [
+		{
+			"title": "C#",
+			"image": "https://bnewmandev.b-cdn.net/CSharp.png",
+			"body": ".NET core and framework & Unity game engine",
+			"link": "http://www.google.com",
+			"id": 0
+		},
+		{
+			"title": "Javascript",
+			"image": "https://bnewmandev.b-cdn.net/JavaScript.png",
+			"body": "Front-end and back end with NodeJS",
+			"link": "http://www.google.com",
+			"id": 1
+		},
+		{
+			"title": "HTML5 & CSS3",
+			"image": "https://bnewmandev.b-cdn.net/html.png",
+			"body": "SASS precompiler and JSON",
+			"link": "http://www.google.com",
+			"id": 2
+		},
+		{
+			"title": "React",
+			"image": "https://bnewmandev.b-cdn.net/React.png",
+			"body": "Advanced front-end development",
+			"link": "http://www.google.com",
+			"id": 3
+		},
+		{
+			"title": "Express",
+			"image": "https://bnewmandev.b-cdn.net/node.png",
+			"body": "Node JS based web servers",
+			"link": "http://www.google.com",
+			"id": 2
+		},
+		{
+			"title": "MongoDB",
+			"image": "https://bnewmandev.b-cdn.net/mongo.png",
+			"body": "With Mongoose and Express for APIs",
+			"link": "http://www.google.com",
+			"id": 2
+		},
+		{
+			"title": "Python",
+			"image": "https://bnewmandev.b-cdn.net/python.png",
+			"body": "Scripting and OOP",
+			"link": "http://www.google.com",
+			"id": 2
+		},
+		{
+			"title": "R",
+			"image": "https://bnewmandev.b-cdn.net/r.png",
+			"body": "Data science and analysis",
+			"link": "http://www.google.com",
+			"id": 2
+		},
+		{
+			"title": "SQL",
+			"image": "https://bnewmandev.b-cdn.net/postgres.png",
+			"body": "PostgreSQL and SQLite",
+			"link": "http://www.google.com",
+			"id": 2
+		}
+	],
+	"learning": [
+		{
+			"title": "test1",
+			"image": "https://via.placeholder.com/135x135.png",
+			"body": "test1",
+			"link": "http://www.google.com",
+			"id": "123"
+		},
+		{
+			"title": "test1",
+			"image": "https://via.placeholder.com/135x135.png",
+			"body": "test1",
+			"link": "http://www.google.com",
+			"id": "123"
+		}
+	],
+	"plans": [
+		{
+			"title": "Heading",
+			"body": "test1",
+			"dateAdded": "1/1/1",
+			"id": "123"
+		},
+		{
+			"title": "Heading",
+			"body": "test1",
+			"dateAdded": "1/1/1",
+			"id": "12s3"
+		}
+	],
+	"projects": [
+		{
+			"title": "Heading",
+			"body": "test1",
+			"dateAdded": "1/1/1",
+			"id": "1234"
+		}
+	]
+}
