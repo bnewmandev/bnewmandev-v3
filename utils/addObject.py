@@ -36,7 +36,7 @@ while True:
         else:
             print("\033[91mChanges Discarded\033[0m")
 
-    if selection == 2:
+    elif selection == 2:
         obj = {
             "title": input("Title: "),
             "image": input("Image Source: "),
@@ -52,7 +52,7 @@ while True:
         else:
             print("\033[91mChanges Discarded\033[0m")
 
-    if selection == 3:
+    elif selection == 3:
         obj = {
             "title": input("Title: "),
             "body": input("Body: "),
@@ -68,7 +68,7 @@ while True:
         else:
             print("\033[91mChanges Discarded\033[0m")
 
-    if selection == 4:
+    elif selection == 4:
         obj = {
             "title": input("Title: "),
             "body": input("Body: "),
@@ -83,3 +83,12 @@ while True:
             print("\033[96mChanges Staged\033[0m")
         else:
             print("\033[91mChanges Discarded\033[0m")
+
+    elif selection == 5:
+        confirm = input("Commit ALL staged changes to server (y/n): ")
+        if confirm == "y":
+            json.dump(dict, open("../front-end/bnewmandotdev/src/data.json", "w"))
+            print("\033[92mChanges Comitted\033[0m")
+
+    elif selection == 6:
+        break

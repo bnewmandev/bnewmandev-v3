@@ -96,6 +96,7 @@ header {
 			width: 30%;
 			padding-top: 12vh;
 			margin-left: 12%;
+			margin-bottom: 5vh;
 
 			h2 {
 				font-size: 36px;
@@ -218,5 +219,96 @@ header {
 		h2 {
 			margin-bottom: 20px;
 		}
+	}
+}
+
+#links {
+	background-color: #444444;
+	main {
+		padding-top: 12vh;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		padding-bottom: 35vh;
+	}
+	img {
+		height: 250px;
+	}
+	img:hover {
+		filter: invert(0.2);
+		transition: 0.2s;
+	}
+}
+
+#contactme {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #444444;
+	text-align: center;
+	h2 {
+		margin-bottom: 15vh;
+		margin-top: 8vh;
+	}
+
+	h3 {
+		font-size: 50px;
+	}
+	main {
+		margin-bottom: 35vh;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	header {
+		height: fit-content;
+		#heading {
+			flex-direction: column;
+			width: 80%;
+			text-align: center;
+			height: fit-content;
+			a {
+				margin: 0;
+				padding: 15px 0;
+				width: 100%;
+				align-self: center;
+				text-align: center;
+			}
+		}
+	}
+	#home-intro {
+		width: 200%;
+	}
+
+	#aboutMeWrapper {
+		main {
+			width: 80%;
+			display: block;
+			article,
+			p {
+				width: 100%;
+			}
+			height: max-content;
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+	#links {
+		main {
+			padding-top: 0;
+			padding-bottom: 1vh;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			a {
+				padding-bottom: 80px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#contactme h3 {
+		font-size: 30px;
 	}
 }
