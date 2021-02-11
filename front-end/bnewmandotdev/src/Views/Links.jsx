@@ -2,7 +2,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import Link from "../Components/Link";
 
-const Links = (active) => {
+const Links = () => {
 	const data = [
 		{
 			link: "https://www.facebook.com/profile.php?id=100057371245350",
@@ -26,6 +26,14 @@ const Links = (active) => {
 		},
 	];
 
+	let active = {
+		home: false,
+		aboutme: false,
+		myplans: false,
+		myprojects: false,
+		links: true,
+		contactme: false,
+	};
 	return (
 		<div id="links">
 			<Header active={active} />

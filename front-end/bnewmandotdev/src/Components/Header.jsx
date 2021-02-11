@@ -1,5 +1,5 @@
 const Header = (active) => {
-	const isActive = active.active.active;
+	const isActive = active.active;
 
 	return (
 		<header>

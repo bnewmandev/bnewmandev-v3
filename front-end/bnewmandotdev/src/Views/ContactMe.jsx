@@ -1,7 +1,15 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
-const ContactMe = (active) => {
+const ContactMe = () => {
+	let active = {
+		home: false,
+		aboutme: false,
+		myplans: false,
+		myprojects: false,
+		links: false,
+		contactme: true,
+	};
 	return (
 		<div id="contactme">
 			<Header active={active} />
