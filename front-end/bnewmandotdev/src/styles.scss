@@ -111,7 +111,7 @@ header {
 			button {
 				font-family: "Slabo 13px", serif;
 				font-size: 18px;
-				width: 30%;
+				padding: 19px 30px;
 				height: 60px;
 				margin-top: 20px;
 				margin-right: 50px;
@@ -119,10 +119,20 @@ header {
 				border-radius: 50px;
 				background-color: #ef7c1a;
 			}
+			a {
+				background-color: #ef7c1a;
+				font-family: "Slabo 13px", serif;
+				font-size: 18px;
+				padding: 10px 10px;
+				margin-right: 10px;
+				border-radius: 25px;
+				text-decoration: none;
+			}
 
-			button:hover {
+			a:hover {
 				background-color: rgba(188, 188, 188, 0.16);
 				transition: 0.4s;
+				cursor: pointer;
 			}
 		}
 	}
@@ -155,6 +165,7 @@ header {
 				overflow-y: auto;
 				overflow-x: hidden;
 				box-shadow: 10px 15px 10px #2b2a2a;
+				font-size: 20px;
 			}
 			a:hover {
 				border: 3px solid #ef7c1a;
@@ -310,5 +321,18 @@ header {
 @media screen and (max-width: 700px) {
 	#contactme h3 {
 		font-size: 30px;
+	}
+	#home-intro {
+		main {
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			a {
+				margin-top: 10px;
+				width: 80%;
+				text-align: center;
+			}
+		}
 	}
 }

@@ -35,7 +35,7 @@ const Header = (active) => {
 					id="myProjectsL"
 					className={`${isActive.myprojects ? "ORANGEBGCOL" : ""}`}
 				>
-					My Projects
+					Projects
 				</a>
 				<a
 					href="/links"
@@ -49,7 +49,7 @@ const Header = (active) => {
 					id="contactMeL"
 					className={`${isActive.contactme ? "ORANGEBGCOL" : ""}`}
 				>
-					Contact Me
+					Contact
 				</a>
 			</div>
 		</header>

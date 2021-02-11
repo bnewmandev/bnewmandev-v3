@@ -56,6 +56,13 @@ const Router = () => {
 			resetActive();
 			active.contactme = true;
 			return <ContactMe active={active} />;
+		case "/puc":
+			return (
+				<img
+					src="https://bnewmandev.b-cdn.net/puc.jpg"
+					alt="Page Under Construction"
+				/>
+			);
 		default:
 			return <FourOFour />;
 	}

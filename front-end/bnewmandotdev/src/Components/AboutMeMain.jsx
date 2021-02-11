@@ -5,19 +5,16 @@ const AboutMeMain = () => {
 			<main>
 				<article>
 					<p>
-						ectetur adipisicing elit. Ipsum doloremque perspiciatis repudiandae
-						saepe minima laboriosam excepturi in minus dolores molestiae quia
-						enim itaque ullam ratione dicta reiciendis pariatur at libero,
-						praesentium ipsam quas. Ducimus, qui vitae voluptas explicabo
-						nesciunt harum delectus magni beatae at debitis, assumenda
-						laudantium obcaecati, et veritatis animi omnis! Quibusdam excepturi
-						sit itaque, consequuntur repellat cum, magni expedita dolores odio
-						accusamus voluptatum sequi? Aspernatur enim inventore tempore
-						nostrum minima, magnam excepturi veniam doloremque rem, facilis id
-						sit, mollitia in totam quidem Lorem ipsum dolor sit amet cons atque
-						quasi ratione eius itaque voluptatum necessitatibus natus deleniti
-						suscipit earum. Amet totam nihil debitis officia fuga, mollitia
-						deleniti aut voluptate nesciunt.
+						I am currently reading computer science at university in the UK and
+						I have experience working in a broad range of fields such as
+						networking, full-stack web development and scripting.
+						<br />
+						<br />I have had experience working with a team notably in working
+						on the API for a food blog website.
+						<br />
+						<br />I primarily focus on teaching programming in python and
+						javascript as well as teaching web development. I also offer data
+						analysis using R and a broad range of development solutions.
 					</p>
 				</article>
 				<article>
