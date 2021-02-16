@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import Home from "./Views/Home";
 import FourOFour from "./Views/FourOFour";
 import AboutMe from "./Views/AboutMe";
@@ -18,6 +18,7 @@ const App = () => {
 				<Route path="/myprojects" component={MyProjects} />
 				<Route path="/links" component={Links} />
 				<Route path="/contactme" component={ContactMe} />
+				<Route path="/" component={FourOFour} />
 			</Switch>
 		</main>
 	);

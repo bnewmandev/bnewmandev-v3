@@ -158,9 +158,19 @@
 		}
 	],
 	"plans": [
-		{ "title": "Under Development", "body": "", "dateAdded": "", "id": "a1" }
+		{
+			"title": "API for this website",
+			"body": "I plan on changing the data dource for this website to a hosted API so that I can add a dev-diary and allow for the easier content updating. I plan on using MongoDB and express in order to do this",
+			"dateAdded": 1613505032451,
+			"id": "46fc5982322141c1817572884bb7d284"
+		}
 	],
 	"projects": [
-		{ "title": "Under Development", "body": "", "dateAdded": "", "id": "a2" }
+		{
+			"title": "This Website",
+			"body": "This website has had a number of iterations since late 2020. The current version uses React for the front end using a static json file as a data source. SASS is used as a CSS preprocessor. A simple express server is used for hosting the site to allow the use of react router. The website is hosted on an ubuntu VPS using a NGINX reverse proxy with a letsencrypt signed SSL certificate",
+			"dateAdded": 1613505032452,
+			"id": "9ef16374cbe04f2da38556ff27577477"
+		}
 	]
 }
