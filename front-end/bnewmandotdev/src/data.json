@@ -5,10 +5,11 @@
 			"image": "https://bnewmandev.b-cdn.net/CSharp.png",
 			"body": ".NET core and framework & Unity game engine",
 			"link": "",
-			"id": 0,
+			"id": "c475df4a77274ab3b7dafac9e3a2c57c",
 			"tags": ["C#"],
 			"eg": [
 				{
+					"id": "6797ab61ccd84a67b8b97605ccf72973",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -19,10 +20,11 @@
 			"image": "https://bnewmandev.b-cdn.net/JavaScript.png",
 			"body": "Front-end and back end with NodeJS",
 			"link": "",
-			"id": 1,
+			"id": "e278fa475e2540fdb1dda064d5d8b271",
 			"tags": ["JS"],
 			"eg": [
 				{
+					"id": "a168ab68a2f54ab7a2a3947b1fd42c99",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -33,10 +35,11 @@
 			"image": "https://bnewmandev.b-cdn.net/html.png",
 			"body": "SASS precompiler and JSON",
 			"link": "",
-			"id": 2,
+			"id": "302366f3820a4ef29ffece75821b2c37",
 			"tags": ["HTML"],
 			"eg": [
 				{
+					"id": "37768b25298440d6afd70a5e9f5f0be9",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -47,10 +50,11 @@
 			"image": "https://bnewmandev.b-cdn.net/React.png",
 			"body": "Advanced front-end development",
 			"link": "",
-			"id": 3,
+			"id": "7471fd4736c84082bd766f98bec9214e",
 			"tags": ["REACT"],
 			"eg": [
 				{
+					"id": "13ddd81fdf6c4c0c8953513682539d83",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -61,10 +65,11 @@
 			"image": "https://bnewmandev.b-cdn.net/node.png",
 			"body": "Node JS based web servers",
 			"link": "",
-			"id": 4,
+			"id": "7944f17655894aa2a17d9b7ef0d1e9cf",
 			"tags": ["EXPRESS"],
 			"eg": [
 				{
+					"id": "886c094c15ec41f6b4edd4f40ab64907",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -75,10 +80,11 @@
 			"image": "https://bnewmandev.b-cdn.net/mongo.png",
 			"body": "With Mongoose and Express for APIs",
 			"link": "",
-			"id": 5,
+			"id": "e5a2e52806074806b46a4bed4e80346a",
 			"tags": ["MONGODB"],
 			"eg": [
 				{
+					"id": "aef3c2b9cfc7497bb502c7f65a783867",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -89,10 +95,16 @@
 			"image": "https://bnewmandev.b-cdn.net/python.png",
 			"body": "Scripting and OOP",
 			"link": "",
-			"id": 6,
+			"id": "f7360a45c00c497d944a1b7b0aa428d8",
 			"tags": ["PYTHON"],
 			"eg": [
 				{
+					"id": "e25a312929ee4c958407d0d5e9f8d0b0",
+					"heading": "WIP",
+					"body": "Work In Progress"
+				},
+				{
+					"id": "1edf8aa0bd1242bd99970d9cfdebd345",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -103,10 +115,11 @@
 			"image": "https://bnewmandev.b-cdn.net/r.png",
 			"body": "Data science and analysis",
 			"link": "",
-			"id": 7,
+			"id": "b59b0a05b4474f97be6a852b69d60866",
 			"tags": ["R"],
 			"eg": [
 				{
+					"id": "37b7ff998ba04d72a29041a64452e344",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -117,10 +130,11 @@
 			"image": "https://bnewmandev.b-cdn.net/postgres.png",
 			"body": "PostgreSQL and SQLite",
 			"link": "",
-			"id": 8,
+			"id": "98ae3e4510144a6b81a892ea5f03f2a7",
 			"tags": ["SQL"],
 			"eg": [
 				{
+					"id": "41aa41f4c2354404a72b0561e5710462",
 					"heading": "WIP",
 					"body": "Work In Progress"
 				}
@@ -133,20 +147,20 @@
 			"image": "https://bnewmandev.b-cdn.net/wip.png",
 			"body": "",
 			"link": "",
-			"id": ""
+			"id": "x"
 		},
 		{
 			"title": "Under Development",
 			"image": "https://bnewmandev.b-cdn.net/wip.png",
 			"body": "",
 			"link": "",
-			"id": ""
+			"id": "y"
 		}
 	],
 	"plans": [
-		{ "title": "Under Development", "body": "", "dateAdded": "", "id": "1" }
+		{ "title": "Under Development", "body": "", "dateAdded": "", "id": "a1" }
 	],
 	"projects": [
-		{ "title": "Under Development", "body": "", "dateAdded": "", "id": "2" }
+		{ "title": "Under Development", "body": "", "dateAdded": "", "id": "a2" }
 	]
 }
