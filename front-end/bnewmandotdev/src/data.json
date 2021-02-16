@@ -5,63 +5,126 @@
 			"image": "https://bnewmandev.b-cdn.net/CSharp.png",
 			"body": ".NET core and framework & Unity game engine",
 			"link": "",
-			"id": 0
+			"id": 0,
+			"tags": ["C#"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "Javascript",
 			"image": "https://bnewmandev.b-cdn.net/JavaScript.png",
 			"body": "Front-end and back end with NodeJS",
 			"link": "",
-			"id": 1
+			"id": 1,
+			"tags": ["JS"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "HTML5 & CSS3",
 			"image": "https://bnewmandev.b-cdn.net/html.png",
 			"body": "SASS precompiler and JSON",
 			"link": "",
-			"id": 2
+			"id": 2,
+			"tags": ["HTML"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "React",
 			"image": "https://bnewmandev.b-cdn.net/React.png",
 			"body": "Advanced front-end development",
 			"link": "",
-			"id": 3
+			"id": 3,
+			"tags": ["REACT"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "Express",
 			"image": "https://bnewmandev.b-cdn.net/node.png",
 			"body": "Node JS based web servers",
 			"link": "",
-			"id": 2
+			"id": 4,
+			"tags": ["EXPRESS"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "MongoDB",
 			"image": "https://bnewmandev.b-cdn.net/mongo.png",
 			"body": "With Mongoose and Express for APIs",
 			"link": "",
-			"id": 2
+			"id": 5,
+			"tags": ["MONGODB"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "Python",
 			"image": "https://bnewmandev.b-cdn.net/python.png",
 			"body": "Scripting and OOP",
 			"link": "",
-			"id": 2
+			"id": 6,
+			"tags": ["PYTHON"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "R",
 			"image": "https://bnewmandev.b-cdn.net/r.png",
 			"body": "Data science and analysis",
 			"link": "",
-			"id": 2
+			"id": 7,
+			"tags": ["R"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		},
 		{
 			"title": "SQL",
 			"image": "https://bnewmandev.b-cdn.net/postgres.png",
 			"body": "PostgreSQL and SQLite",
 			"link": "",
-			"id": 2
+			"id": 8,
+			"tags": ["SQL"],
+			"eg": [
+				{
+					"heading": "WIP",
+					"body": "Work In Progress"
+				}
+			]
 		}
 	],
 	"learning": [

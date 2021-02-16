@@ -25,6 +25,20 @@
 	font-size: 60px;
 }
 
+.MINOR-OVERLAY {
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 10;
+	cursor: pointer;
+}
+
 // Global Header Styling
 header {
 	background-color: #2f3038;
@@ -151,7 +165,7 @@ header {
 			flex-wrap: wrap;
 			justify-content: space-evenly;
 			width: 90%;
-			a {
+			button {
 				background-color: #c7c7c7;
 				margin: 20px;
 				display: flex;
@@ -167,9 +181,10 @@ header {
 				box-shadow: 10px 15px 10px #2b2a2a;
 				font-size: 20px;
 			}
-			a:hover {
+			button:hover {
 				border: 3px solid #ef7c1a;
 				box-shadow: 10px 15px 10px #ef7d1a63;
+				cursor: pointer;
 			}
 			img {
 				margin-bottom: 10px;
@@ -286,7 +301,11 @@ header {
 		}
 	}
 	#home-intro {
-		width: 200%;
+		width: 100%;
+		main {
+			margin-left: 30px;
+			width: 80% !important;
+		}
 	}
 
 	#aboutMeWrapper {
