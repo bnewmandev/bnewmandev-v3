@@ -20,7 +20,7 @@ app.get("*", function (req, res) {
 });
 
 app.post("/contactme", (req, res) => {
-	const ip = req.socket;
+	const ip = req.headers;
 	console.log(ip);
 	const mailOpts = `
 		@everyone
