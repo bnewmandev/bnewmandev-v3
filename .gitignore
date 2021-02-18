@@ -106,3 +106,4 @@ dist
 certs/
 
 front-end/bnewmandotdev/.eslintcache
+installScript.sh
