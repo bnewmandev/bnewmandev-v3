@@ -20,8 +20,6 @@ app.get("*", function (req, res) {
 });
 
 app.post("/contactme", (req, res) => {
-	const ip = req.headers["x-forwarded-for"];
-	console.log(ip);
 	const mailOpts = `
 		@everyone
 		Name: ${req.body.name}
