@@ -337,6 +337,10 @@ header {
 			width: 80%;
 			text-align: center;
 			height: fit-content;
+			padding-bottom: 10px;
+			h1 {
+				margin-bottom: 10px;
+			}
 			a {
 				margin: 0;
 				padding: 15px 0;
@@ -398,6 +402,18 @@ header {
 				width: 80%;
 				text-align: center;
 			}
+		}
+	}
+}
+
+@media screen and (max-width: 1420px) {
+	header a {
+		font-size: 19px !important;
+	}
+	#links {
+		img {
+			width: 200px;
+			height: auto;
 		}
 	}
 }
