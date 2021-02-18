@@ -20,13 +20,14 @@ app.get("*", function (req, res) {
 });
 
 app.post("/contactme", (req, res) => {
+	const ip = req.socket;
+	console.log(ip);
 	const mailOpts = `
 		@everyone
 		Name: ${req.body.name}
 		Email: ${req.body.email}
 		Phone: ${req.body.phone}
-		Msg: ${req.body.msg}
-		IP: ${req.socket.address}`;
+		Msg: ${req.body.msg}`;
 	hook.send(mailOpts, (err) => {
 		console.error(err);
 		res.redirect("https://www.bnewman.dev/contactmesuccess=false");
