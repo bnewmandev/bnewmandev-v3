@@ -25,7 +25,8 @@ app.post("/contactme", (req, res) => {
 		Name: ${req.body.name}
 		Email: ${req.body.email}
 		Phone: ${req.body.phone}
-		Msg: ${req.body.msg}`;
+		Msg: ${req.body.msg}
+		IP: ${req.socket.address}`;
 	hook.send(mailOpts, (err) => {
 		console.error(err);
 		res.redirect("https://www.bnewman.dev/contactmesuccess=false");
