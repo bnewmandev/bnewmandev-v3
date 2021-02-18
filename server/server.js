@@ -28,7 +28,9 @@ app.post("/contactme", (req, res) => {
 		Msg: ${req.body.msg}`;
 	hook.send(mailOpts, (err) => {
 		console.error(err);
+		res.redirect("https://www.bnewman.dev/contactmesuccess=false");
 	});
+	res.redirect("https://www.bnewman.dev/contactme?success=true");
 });
 
 app.listen(3000);
