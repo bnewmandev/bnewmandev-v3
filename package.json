@@ -1,5 +1,7 @@
 {
   "dependencies": {
-    "copyfiles": "^2.4.1"
+    "body-parser": "^1.19.0",
+    "copyfiles": "^2.4.1",
+    "nodemailer": "^6.4.18"
   }
 }

@@ -5,6 +5,7 @@ import MyPlans from "./Views/MyPlans";
 import MyProjects from "./Views/MyProjects";
 import Links from "./Views/Links";
 import ContactMe from "./Views/ContactMe";
+import PUC from "./Views/PUC";
 
 const Router = () => {
 	let active = {
@@ -57,12 +58,7 @@ const Router = () => {
 			active.contactme = true;
 			return <ContactMe active={active} />;
 		case "/puc":
-			return (
-				<img
-					src="https://bnewmandev.b-cdn.net/puc.jpg"
-					alt="Page Under Construction"
-				/>
-			);
+			return <PUC />;
 		default:
 			return <FourOFour />;
 	}

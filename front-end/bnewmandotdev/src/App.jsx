@@ -6,6 +6,7 @@ import MyPlans from "./Views/MyPlans";
 import MyProjects from "./Views/MyProjects";
 import Links from "./Views/Links";
 import ContactMe from "./Views/ContactMe";
+import PUC from "./Views/PUC";
 
 const App = () => {
 	return (
@@ -18,6 +19,7 @@ const App = () => {
 				<Route path="/myprojects" component={MyProjects} />
 				<Route path="/links" component={Links} />
 				<Route path="/contactme" component={ContactMe} />
+				<Route path="/puc" component={PUC} />
 				<Route path="/" component={FourOFour} />
 			</Switch>
 		</main>

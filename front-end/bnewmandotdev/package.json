@@ -10,6 +10,7 @@
 		"netlify-cli": "^3.7.1",
 		"node-sass": "4.14.1",
 		"react": "^17.0.1",
+		"react-device-detect": "^1.15.0",
 		"react-dom": "^17.0.1",
 		"react-overlays": "^4.1.1",
 		"react-router-dom": "^5.2.0",

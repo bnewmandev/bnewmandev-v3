@@ -284,6 +284,49 @@ header {
 	main {
 		margin-bottom: 35vh;
 	}
+	form {
+		fieldset {
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+			border: none;
+			font-size: 30px;
+			input,
+			textarea {
+				padding-left: 5px;
+				font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+				width: 60%;
+				color: black;
+				font-size: 30px;
+				margin-bottom: 15px;
+			}
+			p {
+				font-size: 20px;
+			}
+			button {
+				margin-top: 10px;
+				margin-bottom: 80px;
+				width: 30%;
+				height: 50px;
+				background-color: #ef7c1a;
+				border: none;
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+#PUC {
+	article {
+		background-color: #444444;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+		font-size: 30px;
+		text-align: center;
+	}
 }
 
 @media screen and (max-width: 1150px) {
