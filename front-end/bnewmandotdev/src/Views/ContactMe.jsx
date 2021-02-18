@@ -1,6 +1,7 @@
 import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import { MobileView } from "react-device-detect";
+import queryString from "query-string";
 
 const ContactMe = () => {
 	let active = {
@@ -11,6 +12,16 @@ const ContactMe = () => {
 		links: false,
 		contactme: true,
 	};
+	const url = window.location.search;
+	const params = queryString.parse(url);
+	console.log(params);
+	if ("success" in params) {
+		if (params.success === "true") {
+			alert("Email Sent Successfully");
+		} else {
+			alert("Error in sending email");
+		}
+	}
 	return (
 		<div id="contactme">
 			<Header active={active} />
