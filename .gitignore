@@ -107,3 +107,4 @@ certs/
 
 front-end/bnewmandotdev/.eslintcache
 installScript.sh
+config.json
