@@ -29,6 +29,7 @@ app.post("/contactme", (req, res) => {
 		to: process.env.EMAIL,
 		subject: `New Mesage from ${req.body.name} at bnewman.dev`,
 		text: `
+		@jam1nb3n
 		Name: ${req.body.name},
 		Email: ${req.body.email},
 		Phone: ${req.body.phone},
