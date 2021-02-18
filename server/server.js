@@ -26,7 +26,9 @@ app.post("/contactme", (req, res) => {
 		Email: ${req.body.email}
 		Phone: ${req.body.phone}
 		Msg: ${req.body.msg}`;
-	hook.send(mailOpts);
+	hook.send(mailOpts, (err) => {
+		console.error(err);
+	});
 });
 
 app.listen(3000);
