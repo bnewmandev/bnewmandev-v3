@@ -7,6 +7,13 @@ const skillsSchema = mongoose.Schema({
 	summary: String,
 	dateCreated: Number,
 	dateUpdated: Number,
+	detail: [
+		{
+			id: mongoose.Schema.Types.ObjectId,
+			title: String,
+			body: String,
+		},
+	],
 });
 
 module.exports = mongoose.model("Skills", skillsSchema);

@@ -1,9 +1,15 @@
 const express = require("express");
 const router = express.Router();
+const Skills = require("../models/skills");
 
 router.get("/", (req, res, next) => {
-	res.status(200).json({
-		message: "Handling GET requests to /skills",
+	Skills.find({}, (err, result) => {
+		if (err) {
+			console.log(err);
+			res.status(500).send();
+		} else {
+			res.status(200).json(result);
+		}
 	});
 });
 

@@ -5,15 +5,23 @@ const mongoose = require("mongoose");
 const Aboutme = require("../models/aboutme");
 
 router.get("/", (req, res, next) => {
-	res.status(200).json({
-		message: "Handling GET requests to /aboutme",
-	});
+	const id = req.body._id
+	let doc = await Aboutme.findById(id)
+	res.status(200).send(doc)
 });
 
 router.patch("/", (req, res, next) => {
-	res.status(200).json({
-		message: "Handling PATCH requests to /aboutme",
-	});
+	const id = req.body._id
+	const replacement = {
+		id: id,
+		title: req.body.title,
+		image: req.body.image,
+		content: req.body.content,
+		dateUpdated: Date.now()
+	}
+	let doc = await Aboutme.findOneAndReplace(id, replacement)
+	await doc.save()
+	res.status(201).send(doc)
 });
 
 router.post("/", (req, res, next) => {

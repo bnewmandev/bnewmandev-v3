@@ -68,21 +68,29 @@ const ContactMe = () => {
 						<button type="submit">Submit</button>
 					</fieldset>
 				</form>
-				<h3>Email: ben@bnewman.dev</h3>
-				<h3>Phone: +44 7860 241605</h3>
-
-				<MobileView>
+				<h3>
 					<br />
-					<h3>
-						<a href="mailto:ben@bnewman.dev">Email</a>
-					</h3>
-					<h3>
-						<a href="tel:+4407860241605">Call</a>
-					</h3>
-					<h3>
-						<a href="sms:+4407860241605">SMS</a>
-					</h3>
-				</MobileView>
+					Email: <br />
+					ben@bnewman.dev
+				</h3>
+				<h3>
+					<br />
+					Phone: <br /> +44 7860 241605
+				</h3>
+				<article id="mobileA">
+					<MobileView>
+						<br />
+						<h3>
+							<a href="mailto:ben@bnewman.dev">Email</a>
+						</h3>
+						<h3>
+							<a href="tel:+4407860241605">Call</a>
+						</h3>
+						<h3>
+							<a href="sms:+4407860241605">SMS</a>
+						</h3>
+					</MobileView>
+				</article>
 			</main>
 			<Footer />
 		</div>
