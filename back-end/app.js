@@ -1,58 +1,40 @@
+const path = require("path");
 const express = require("express");
-const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
+const session = require("express-session");
 require("dotenv").config();
 
 const app = express();
 
-const aboutmeRoutes = require("./api/routes/aboutme");
-const plansRoutes = require("./api/routes/plans");
-const projectsRoutes = require("./api/routes/projects");
-const skillsRoutes = require("./api/routes/skills");
-const toleanRoutes = require("./api/routes/tolearn");
+const authRoutes = require("./routes/auth");
+const securePing = require("./routes/securePing");
+const verifyToken = require("./routes/validateToken");
+
+app.use(
+	session({
+		secret: process.env.SESSION_SECRET,
+		resave: true,
+		saveUninitialized: true,
+	})
+);
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.use("/auth", authRoutes);
+app.use("/secureping", verifyToken, securePing);
 
 mongoose.connect(process.env.CONNECTION_STRING, {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
+	useCreateIndex: true,
+});
+mongoose.connection.on("open", () => {
+	console.log("Database linked to server");
 });
 
-app.use(morgan("dev"));
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
-
-app.use((req, res, next) => {
-	res.header("Access-Control-Allow-Origin", "*");
-	res.header(
-		"Access-Control-Allow-Headers",
-		"Origin, X-Requested-With, Content-Type, Accept, Authorization"
-	);
-	if (req.method === "OPTIONS") {
-		res.header("Access-Control-Allow-Methods", "PUT, POST, PATCH, DELETE, GET");
-		return res.status(200).json({});
-	}
-	next();
-});
-
-app.use("/aboutme", aboutmeRoutes);
-app.use("/plans", plansRoutes);
-app.use("/projects", projectsRoutes);
-app.use("/skills", skillsRoutes);
-app.use("/tolearn", toleanRoutes);
-
-app.use((req, res, next) => {
-	const error = new Error("Not Found");
-	error.status = 404;
-	next(error);
-});
-
-app.use((error, req, res, next) => {
-	res.status(error.status || 500);
-	res.json({
-		error: {
-			message: error.message,
-		},
-	});
+app.get("/", (req, res) => {
+	res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 module.exports = app;
