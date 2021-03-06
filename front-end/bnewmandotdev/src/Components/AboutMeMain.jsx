@@ -21,21 +21,6 @@ const AboutMeMain = () => {
 					<img src="https://bnewmandev.b-cdn.net/ben.jpg" alt="Ben Newman" />
 				</article>
 			</main>
-			<section>
-				<article>
-					<p>Ben Newman Development</p>
-					<p>Beit House</p>
-					<p>Sleepers Hill</p>
-					<p>Winchester</p>
-					<p>SO22 4NF</p>
-				</article>
-				<div>
-					<p>
-						Ben Newman Development Limited is a company registered in England
-						and Wales with the Company Number 13182000.
-					</p>
-				</div>
-			</section>
 		</div>
 	);
 };

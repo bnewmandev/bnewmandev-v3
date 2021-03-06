@@ -3,15 +3,7 @@ import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 import data from "../data.json";
 
-const MyPlans = () => {
-	let active = {
-		home: false,
-		aboutme: false,
-		myplans: true,
-		myprojects: false,
-		links: false,
-		contactme: false,
-	};
+const MyPlans = (active) => {
 	return (
 		<div className="primaryPage" id="myplans">
 			<Header active={active} />

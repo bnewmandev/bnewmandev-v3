@@ -5,7 +5,7 @@ const jwt = require("jsonwebtoken");
 const { registerValidation, loginValidation } = require("../validation");
 
 router.post("/register", async (req, res) => {
-	const enabled = true;
+	const enabled = false;
 
 	if (!enabled) {
 		return res.status(403).send(`<h1>ERROR 403 - FORBIDDEN</h1>`);

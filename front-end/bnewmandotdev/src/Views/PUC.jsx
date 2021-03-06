@@ -1,14 +1,6 @@
 import Header from "../Components/Header";
 
-const PUC = () => {
-	let active = {
-		home: false,
-		aboutme: false,
-		myplans: false,
-		myprojects: false,
-		links: false,
-		contactme: false,
-	};
+const PUC = (active) => {
 	return (
 		<div id="PUC">
 			<Header active={active} />

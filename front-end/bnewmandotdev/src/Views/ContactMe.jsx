@@ -3,15 +3,7 @@ import Header from "../Components/Header";
 import { MobileView } from "react-device-detect";
 import queryString from "query-string";
 
-const ContactMe = () => {
-	let active = {
-		home: false,
-		aboutme: false,
-		myplans: false,
-		myprojects: false,
-		links: false,
-		contactme: true,
-	};
+const ContactMe = (active) => {
 	const url = window.location.search;
 	const params = queryString.parse(url);
 	console.log(params);
@@ -92,6 +84,21 @@ const ContactMe = () => {
 					</MobileView>
 				</article>
 			</main>
+			<section>
+				<article>
+					<p>Ben Newman Development</p>
+					<p>Beit House</p>
+					<p>Sleepers Hill</p>
+					<p>Winchester</p>
+					<p>SO22 4NF</p>
+				</article>
+				<div>
+					<p>
+						Ben Newman Development Limited is a company registered in England
+						and Wales with the Company Number 13182000.
+					</p>
+				</div>
+			</section>
 			<Footer />
 		</div>
 	);

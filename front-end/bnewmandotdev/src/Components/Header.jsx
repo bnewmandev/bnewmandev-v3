@@ -1,6 +1,46 @@
-const Header = (active) => {
-	const isActive = active.active;
-
+const Header = () => {
+	const path = window.location.pathname;
+	let isActive = {
+		home: false,
+		aboutme: false,
+		myplans: false,
+		myprojects: false,
+		services: false,
+		blog: false,
+		links: false,
+		contactme: false,
+	};
+	switch (path) {
+		case "/home":
+			isActive.home = true;
+			break;
+		case "/":
+			isActive.home = true;
+			break;
+		case "/aboutme":
+			isActive.aboutme = true;
+			break;
+		case "/myplans":
+			isActive.myplans = true;
+			break;
+		case "/myprojects":
+			isActive.myprojects = true;
+			break;
+		case "/services":
+			isActive.services = true;
+			break;
+		case "/blog":
+			isActive.blog = true;
+			break;
+		case "/links":
+			isActive.links = true;
+			break;
+		case "/contactme":
+			isActive.contactme = true;
+			break;
+		default:
+			break;
+	}
 	return (
 		<header>
 			<div id="heading">
@@ -36,6 +76,20 @@ const Header = (active) => {
 					className={`${isActive.myprojects ? "ORANGEBGCOL" : ""}`}
 				>
 					Projects
+				</a>
+				<a
+					href="/services"
+					id="servicesL"
+					className={`${isActive.services ? "ORANGEBGCOL" : ""}`}
+				>
+					Services
+				</a>
+				<a
+					href="/blog"
+					id="blogL"
+					className={`${isActive.blog ? "ORANGEBGCOL" : ""}`}
+				>
+					Blog
 				</a>
 				<a
 					href="/links"
