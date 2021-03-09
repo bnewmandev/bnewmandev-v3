@@ -1,31 +1,20 @@
-const uuid = require("uuid");
-
-const { Sequelize, DataTypes, Model } = require("sequelize");
-const sequelize = new Sequelize(process.env.DB_STRING);
-
-class Skill extends Model {}
-Skill.init(
-	{
+module.exports = (sequelize, Sequelize) => {
+	const Skill = sequelize.define("skills", {
 		id: {
-			type: DataTypes.UUID,
+			type: Sequelize.UUID,
 			primaryKey: true,
 			allowNull: false,
 		},
 		title: {
-			type: DataTypes.STRING,
+			type: Sequelize.STRING,
 			allowNull: false,
 		},
 		image: {
-			type: DataTypes.STRING,
+			type: Sequelize.STRING,
 		},
 		desc: {
-			type: DataTypes.STRING,
+			type: Sequelize.STRING,
 		},
-	},
-	{
-		sequelize,
-		modelName: "Skill",
-	}
-);
-
-module.exports = Skill;
+	});
+	return Skill;
+};

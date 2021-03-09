@@ -9,22 +9,13 @@ const port = process.env.PORT || 8000;
 
 const sequelize = new Sequelize(process.env.DB_STRING);
 
+const db = require("./models/index");
+
 const options = {
 	cors: {
 		origin: `http://localhost:${parseInt(port) + 1}`,
 	},
 };
-
-sequelize
-	.authenticate()
-	.then(() => {
-		console.log("Connected to database");
-	})
-	.catch((err) => {
-		console.log("ERROR CONNECTING TO DB: " + err);
-	});
-
-const Skill = require("./models/Skill");
 
 const skill = require("./routes/skill");
 
