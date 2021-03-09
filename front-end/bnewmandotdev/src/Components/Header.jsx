@@ -29,9 +29,6 @@ const Header = () => {
 		case "/services":
 			isActive.services = true;
 			break;
-		case "/blog":
-			isActive.blog = true;
-			break;
 		case "/links":
 			isActive.links = true;
 			break;
@@ -83,13 +80,6 @@ const Header = () => {
 					className={`${isActive.services ? "ORANGEBGCOL" : ""}`}
 				>
 					Services
-				</a>
-				<a
-					href="/blog"
-					id="blogL"
-					className={`${isActive.blog ? "ORANGEBGCOL" : ""}`}
-				>
-					Blog
 				</a>
 				<a
 					href="/links"

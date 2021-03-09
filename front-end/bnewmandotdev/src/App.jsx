@@ -7,6 +7,7 @@ import MyProjects from "./Views/MyProjects";
 import Links from "./Views/Links";
 import ContactMe from "./Views/ContactMe";
 import PUC from "./Views/PUC";
+import Services from "./Views/Services";
 
 const App = () => {
 	let active = {
@@ -28,6 +29,10 @@ const App = () => {
 				<Route
 					path="/myprojects"
 					component={() => <MyProjects active={MyProjects} />}
+				/>
+				<Route
+					path="/services"
+					component={() => <Services active={Services} />}
 				/>
 				<Route path="/links" component={() => <Links active={Links} />} />
 				<Route

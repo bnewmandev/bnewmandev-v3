@@ -172,5 +172,36 @@
 			"dateAdded": 1613505032452,
 			"id": "9ef16374cbe04f2da38556ff27577477"
 		}
+	],
+	"services": [
+		{
+			"title": "Programming for beginners",
+			"body": "learn programming in python and/or javascript, including homeworks and projects, 25 USD per hour. Please contact me for more details"
+		},
+		{
+			"title": "HTML & CSS for beginners",
+			"body": "learn the fundamentals of web design, 25 USD per hour"
+		},
+		{
+			"title": "Full-stack web development",
+			"body": "learn how to create advanced web applications and webservers, 25 USD per hour"
+		},
+		{
+			"title": "JavaScript for frontend development",
+			"body": "learn how to use javascript to interact with a website and add interactivity 25 USD per hour"
+		},
+		{
+			"title": "JavaScript for backend development",
+			"body": "learn how to use javascript in order to create APIs and webservers 25 USD per hour"
+		},
+		{
+			"title": "Advanced web development with react",
+			"body": "learn how to create modern webpages using the react framework 25 USD per hour"
+		},
+		{
+			"title": "Write a custom discord bot",
+			"body": "I will write a custom discord bot for you with optional hosting, management and upkeep, starts at 35 USD. Please contact me for more details",
+			"id": "3f1d2a81a76542969a0ff58cc67746d1"
+		}
 	]
 }
